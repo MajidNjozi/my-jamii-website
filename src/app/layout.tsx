@@ -4,9 +4,9 @@ import './assets/scss/tailwind.scss';
 import './assets/css/material.css';
 
 export const metadata: Metadata = {
-  title: 'My Jamii - Simplifying Connections to People, Events, and Services.',
+  title: 'My Jamii - Community Engagement, Connections, and Learning',
   description:
-    'An online platform which will easily connect people from different countries by creating communities and offering services depending on people’s country and cities of origin and their new locations.',
+    ' We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen. ',
 };
 
 export default function RootLayout({

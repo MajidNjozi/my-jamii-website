@@ -7,7 +7,7 @@ import ReactWOW from 'react-wow';
 import 'animate.css';
 
 import { feature2, feature3 } from '../app/data/data';
-import { FiAperture, FiShield } from 'react-icons/fi';
+import { FiAperture, FiInfo, FiLink, FiShield } from 'react-icons/fi';
 import Navbar from './components/navbar';
 import ScreenshotTwo from './components/screenshot-two';
 import FaqTwo from './components/faq-two';
@@ -20,6 +20,25 @@ import ScrollToTop from './components/scroll-to-top';
 import Footer from './components/footer';
 
 export default function Page() {
+  let aboutData2 = [
+    {
+      icon: FiLink,
+      title: 'Access services',
+      subheading: 'Investment. Food. Legal. And More',
+      desc: 'Whether you are looking for services where you are living or from back in your home country, MyJamii let us access relevant service providers.',
+    },
+    {
+      icon: FiInfo,
+      title: 'Be informed',
+      desc: 'Get your questions unanswered but people in your community. Access local news about your community abroad and back home.',
+    },
+    {
+      icon: FiLink,
+      title: 'Get engaged',
+      subheading: 'Events. Follow. Post. Share',
+      desc: 'Register and follow events in your community. Post and talk about the things that matters to you.',
+    },
+  ];
   let aboutData = [
     {
       icon: FiShield,
@@ -41,7 +60,7 @@ export default function Page() {
         bgLight={false}
         navCenter={true}
       />
-
+      {/* **************** HERO SECTION STARTS HERE ****************** */}
       <section
         className="relative pt-24 xl:pb-[420px] md:pb-80 pb-36 items-center overflow-hidden bg-myjamiiGreen/5"
         id="home"
@@ -124,8 +143,42 @@ export default function Page() {
               <div className="absolute overflow-hidden lg:size-[600px] md:size-[450px] sm:size-[400px] size-[320px] bg-gradient-to-tl to-myjamiiGreen/20 via-myjamiiGreen/70 from-myjamiiGreen bottom-0 translate-x-1/2 start-1/2 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 z-1 shadow-md shadow-myjamiiGreen/10 rounded-full"></div>
             </div>
           </div>
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-6">
+            {aboutData2.map((item: any, index: number) => {
+              let Icon = item.icon;
+              return (
+                <ReactWOW animation="fadeInUp" key={index}>
+                  <div
+                    className="group flex relative overflow-hidden p-6 rounded-md shadow dark:shadow-gray-800 bg-slate-50/50 dark:bg-slate-800/20 hover:bg-myjamiiGreen dark:hover:bg-myjamiiGreen duration-500 wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".3s"
+                    key={index}
+                  >
+                    <span className="text-myjamiiGreen group-hover:text-white text-5xl font-semibold duration-500">
+                      <Icon className="size-8 mt-2" />
+                    </span>
+                    <div className="flex-1 ms-3">
+                      <h5 className=" text-lg font-semibold duration-500">
+                        {item.title}
+                      </h5>
+                      <p className="text-myjamiiBlack font-medium  duration-500 mt-2">
+                        {item.subheading}
+                      </p>
+                      <p className="text-myjamiiBlack/50 duration-500 mt-2">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <div className="absolute start-1 top-5 text-slate-900/[0.02] dark:text-white/[0.03] text-8xl group-hover:text-white/[0.1] duration-500">
+                      <Icon className="size-24" />
+                    </div>
+                  </div>
+                </ReactWOW>
+              );
+            })}
+          </div>
         </div>
       </section>
+
+      {/* **************** FEATURES SECTION STARTS HERE ****************** */}
 
       <section className="relative md:py-24 py-16" id="features">
         <div className="container relative">
