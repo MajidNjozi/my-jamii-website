@@ -7,7 +7,14 @@ import ReactWOW from 'react-wow';
 import 'animate.css';
 
 import { feature2, feature3 } from '../app/data/data';
-import { FiAperture, FiInfo, FiLink, FiShield } from 'react-icons/fi';
+import {
+  FiAperture,
+  FiGlobe,
+  FiHeart,
+  FiInfo,
+  FiLink,
+  FiShield,
+} from 'react-icons/fi';
 import Navbar from './components/navbar';
 import ScreenshotTwo from './components/screenshot-two';
 import FaqTwo from './components/faq-two';
@@ -22,6 +29,12 @@ import Footer from './components/footer';
 export default function Page() {
   let aboutData2 = [
     {
+      icon: FiGlobe,
+      title: 'Join the community',
+
+      desc: 'Meet with people from your home countries and other countries who are living near you. Be part of a vibrant community.',
+    },
+    {
       icon: FiLink,
       title: 'Access services',
       subheading: 'Investment. Food. Legal. And More',
@@ -33,7 +46,7 @@ export default function Page() {
       desc: 'Get your questions unanswered but people in your community. Access local news about your community abroad and back home.',
     },
     {
-      icon: FiLink,
+      icon: FiHeart,
       title: 'Get engaged',
       subheading: 'Events. Follow. Post. Share',
       desc: 'Register and follow events in your community. Post and talk about the things that matters to you.',
@@ -188,21 +201,21 @@ export default function Page() {
               data-wow-delay=".1s"
             >
               <h6 className="text-myjamiiGreen uppercase text-sm font-bold tracking-wider mb-3">
-                Features
+                About
               </h6>
               <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">
-                Discover Powerful Features
+                About My Jamii
               </h4>
 
               <p className="text-slate-400 max-w-xl mx-auto">
-                Unleash the power of our platform with a multitude of powerful
-                features, empowering you to achieve your goals.
+                We bring together people around the world with the countrymen
+                and neighbors in their local communities.
               </p>
             </div>
           </ReactWOW>
 
           <div className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-1 mt-6 gap-6 items-center">
-            <div className="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
+            {/* <div className="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
               <div className="grid grid-cols-1 gap-6">
                 {feature2.map((item: any, index: number) => {
                   let Icon = item.icon;
@@ -226,7 +239,7 @@ export default function Page() {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
 
             <div className="lg:col-span-4 md:col-span-12 lg:mx-4 lg:order-2 order-1">
               <ReactWOW animation="zoomIn">
@@ -243,7 +256,7 @@ export default function Page() {
               </ReactWOW>
             </div>
 
-            <div className="lg:col-span-4 md:col-span-6 order-3">
+            <div className="lg:col-span-8 md:col-span-6 order-3">
               <div className="grid grid-cols-1 gap-6">
                 {feature3.map((item: any, index: number) => {
                   let Icon = item.icon;
@@ -271,6 +284,86 @@ export default function Page() {
           </div>
         </div>
 
+        {/* <div className="container relative md:mt-24 mt-16">
+          <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+            <div className="lg:col-span-5 md:col-span-6 md:order-2 order-1">
+              <div className="pt-6 px-6 rounded-2xl bg-myjamiiGreen/5 dark:bg-myjamiiGreen/10 shadow shadow-myjamiiGreen/20">
+                <ReactWOW animation="zoomIn">
+                  <Image
+                    src="/images/phone/half-2.png"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }}
+                    className="wow animate__animated animate__zoomIn"
+                    data-wow-delay=".7s"
+                    alt=""
+                  />
+                </ReactWOW>
+              </div>
+            </div>
+
+            <div className="lg:col-span-7 md:col-span-6 md:order-1 order-2">
+              <div className="lg:me-10">
+                <ReactWOW animation="fadeInUp">
+                  <div
+                    className="wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".1s"
+                  >
+                    <h6 className="text-myjamiiGreen uppercase text-sm font-bold tracking-wider mb-3">
+                      Elegant Design
+                    </h6>
+                    <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">
+                      Share your photos with <br /> friends easily
+                    </h4>
+                    <p className="text-slate-400 max-w-xl">
+                      Unleash the power of our platform with a multitude of
+                      powerful features, empowering you to achieve your goals.
+                    </p>
+                  </div>
+                </ReactWOW>
+                <ReactWOW animation="fadeInUp">
+                  <ul
+                    className="list-none text-slate-400 mt-6 wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <li className="mb-1 flex">
+                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
+                      Digital Marketing Solutions for Tomorrow
+                    </li>
+                    <li className="mb-1 flex">
+                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
+                      Our Talented & Experienced Marketing Agency
+                    </li>
+                    <li className="mb-1 flex">
+                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
+                      Create your own skin to match your brand
+                    </li>
+                  </ul>
+                </ReactWOW>
+                <ReactWOW animation="fadeInUp">
+                  <div
+                    className="mt-6 wow animate__animated animate__fadeInUp"
+                    data-wow-delay=".5s"
+                  >
+                    <Link
+                      href=""
+                      className="hover:text-myjamiiGreen dark:hover:text-myjamiiGreen after:bg-myjamiiGreen dark:text-white transition duration-500 font-medium"
+                    >
+                      Learn More{' '}
+                      <i className="mdi mdi-arrow-right align-middle"></i>
+                    </Link>
+                  </div>
+                </ReactWOW>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </section>
+
+      {/* **************** SERVICES SECTION STARTS HERE ***************************** */}
+
+      <section className="relative md:pb-24 pb-16" id="customizable">
         <div className="container relative md:mt-24 mt-16">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
             <div className="lg:col-span-5 md:col-span-6">
@@ -343,82 +436,6 @@ export default function Page() {
                   <div
                     className="mt-6 wow animate__animated animate__fadeInUp"
                     data-wow-delay=".7s"
-                  >
-                    <Link
-                      href=""
-                      className="hover:text-myjamiiGreen dark:hover:text-myjamiiGreen after:bg-myjamiiGreen dark:text-white transition duration-500 font-medium"
-                    >
-                      Learn More{' '}
-                      <i className="mdi mdi-arrow-right align-middle"></i>
-                    </Link>
-                  </div>
-                </ReactWOW>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container relative md:mt-24 mt-16">
-          <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-            <div className="lg:col-span-5 md:col-span-6 md:order-2 order-1">
-              <div className="pt-6 px-6 rounded-2xl bg-myjamiiGreen/5 dark:bg-myjamiiGreen/10 shadow shadow-myjamiiGreen/20">
-                <ReactWOW animation="zoomIn">
-                  <Image
-                    src="/images/phone/half-2.png"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: '100%', height: 'auto' }}
-                    className="wow animate__animated animate__zoomIn"
-                    data-wow-delay=".7s"
-                    alt=""
-                  />
-                </ReactWOW>
-              </div>
-            </div>
-
-            <div className="lg:col-span-7 md:col-span-6 md:order-1 order-2">
-              <div className="lg:me-10">
-                <ReactWOW animation="fadeInUp">
-                  <div
-                    className="wow animate__animated animate__fadeInUp"
-                    data-wow-delay=".1s"
-                  >
-                    <h6 className="text-myjamiiGreen uppercase text-sm font-bold tracking-wider mb-3">
-                      Elegant Design
-                    </h6>
-                    <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">
-                      Share your photos with <br /> friends easily
-                    </h4>
-                    <p className="text-slate-400 max-w-xl">
-                      Unleash the power of our platform with a multitude of
-                      powerful features, empowering you to achieve your goals.
-                    </p>
-                  </div>
-                </ReactWOW>
-                <ReactWOW animation="fadeInUp">
-                  <ul
-                    className="list-none text-slate-400 mt-6 wow animate__animated animate__fadeInUp"
-                    data-wow-delay=".3s"
-                  >
-                    <li className="mb-1 flex">
-                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
-                      Digital Marketing Solutions for Tomorrow
-                    </li>
-                    <li className="mb-1 flex">
-                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
-                      Our Talented & Experienced Marketing Agency
-                    </li>
-                    <li className="mb-1 flex">
-                      <i className="mdi mdi-check text-myjamiiGreen text-xl me-2"></i>{' '}
-                      Create your own skin to match your brand
-                    </li>
-                  </ul>
-                </ReactWOW>
-                <ReactWOW animation="fadeInUp">
-                  <div
-                    className="mt-6 wow animate__animated animate__fadeInUp"
-                    data-wow-delay=".5s"
                   >
                     <Link
                       href=""

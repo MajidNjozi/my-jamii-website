@@ -186,7 +186,7 @@ export default function Navbar({
                 spy={true}
                 smooth={true}
                 duration={500}
-                to="screenshot"
+                to="customizable"
               >
                 Services
               </Link1>
