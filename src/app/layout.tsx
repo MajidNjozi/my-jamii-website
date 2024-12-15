@@ -7,6 +7,38 @@ export const metadata: Metadata = {
   title: 'My Jamii - Community Engagement, Connections, and Learning',
   description:
     ' We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen. ',
+  openGraph: {
+    type: 'website',
+    url: 'https://myjamii.com',
+    title: 'My Jamii - Community Engagement, Connections, and Learning',
+    description:
+      'We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen.',
+    images: [
+      {
+        url: 'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+        width: 1200,
+        height: 630,
+        alt: 'Rasello platform showcasing analytics, prediction, and communication tools',
+      },
+      {
+        url: 'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+        width: 600,
+        height: 315,
+        alt: 'Rasello platform showcasing analytics, prediction, and communication tools',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@myjamiiapp',
+    title: 'My Jamii - Community Engagement, Connections, and Learning',
+    description:
+      'We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen.',
+    images: [
+      'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+      'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+    ],
+  },
 };
 
 export default function RootLayout({

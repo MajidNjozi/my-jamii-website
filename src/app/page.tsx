@@ -32,6 +32,7 @@ import { BsFilePerson } from 'react-icons/bs';
 
 import { CgFileDocument } from 'react-icons/cg';
 import CookiePolicy from './components/cookie-policy';
+import Faq from './components/faq';
 
 export default function Page() {
   let aboutData2 = [
@@ -554,11 +555,11 @@ export default function Page() {
         <ContactTwo />
       </section>
 
-      <section className="py-6 border-t border-b border-gray-100 dark:border-gray-800">
+      {/* <section className="py-6 border-t border-b border-gray-100 dark:border-gray-800">
         <div className="container relative">
           <PartnerTwo />
         </div>
-      </section>
+      </section> */}
 
       <Footer />
 

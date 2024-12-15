@@ -25,17 +25,18 @@ export default function CookiePolicyPage() {
       <section className="bg-white dark:bg-gray-900 px-6 py-32 lg:px-8 border-b border-gray-200 dark:border-gray-700">
         <div className="mx-auto max-w-5xl text-base leading-7 text-gray-700 dark:text-gray-300">
           <h6 className="text-myjamiiGreen uppercase text-sm font-bold tracking-wider mb-3">
-            MyJamii Cookie Policy
+            Terms and Conditions
           </h6>
           <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold dark:text-gray-100">
-            Review how we store and use cookies
+            Know your rights and responsibilities as part of the MyJamii
+            community
           </h4>
           <figure className="mt-16">
             <Image
               height={480}
               width={840}
               className="w-full max-h-52 aspect-video rounded-xl bg-gray-50 dark:bg-gray-800 object-cover"
-              src="https://utfs.io/f/NQ1UkAeyXUbIujrZwKyCIE8ZG5qt6w0pWVbgFQ7hvms4LdlR"
+              src="https://utfs.io/f/NQ1UkAeyXUbIFv3hGtP8JA6DtPSg9KLkVwXrRYy7BoEGcvNn"
               alt=""
             />
 
@@ -113,7 +114,7 @@ export default function CookiePolicyPage() {
               ut. Ac lorem vel integer orci.
             </p>
             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-              What are cookies?
+              Publication date
             </h2>
             <p className="mt-6">
               Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
@@ -168,7 +169,7 @@ export default function CookiePolicyPage() {
             </figcaption>
           </figure>
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-            Types of Cookies?
+            Background
           </h2>
           <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
@@ -179,7 +180,7 @@ export default function CookiePolicyPage() {
             diam.
           </p>
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-            Cookies consent
+            Definitions
           </h2>
           <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
@@ -190,7 +191,7 @@ export default function CookiePolicyPage() {
             diam.
           </p>
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-            Cookies storage
+            MyJamii community
           </h2>
           <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
@@ -201,7 +202,62 @@ export default function CookiePolicyPage() {
             diam.
           </p>
           <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-            Cookies usage
+            Changes of terms
+          </h2>
+          <p className="mt-6">
+            Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
+            in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
+            mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+            tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+            Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
+            diam.
+          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Account management
+          </h2>
+          <p className="mt-6">
+            Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
+            in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
+            mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+            tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+            Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
+            diam.
+          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Members safety
+          </h2>
+          <p className="mt-6">
+            Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
+            in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
+            mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+            tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+            Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
+            diam.
+          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Disclaimer
+          </h2>
+          <p className="mt-6">
+            Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
+            in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
+            mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+            tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+            Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
+            diam.
+          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Liability
+          </h2>
+          <p className="mt-6">
+            Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
+            in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
+            mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
+            tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
+            Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
+            diam.
+          </p>
+          <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Governing law
           </h2>
           <p className="mt-6">
             Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
@@ -213,6 +269,7 @@ export default function CookiePolicyPage() {
           </p>
         </div>
       </section>
+
       <Footer />
 
       <ScrollToTop />
