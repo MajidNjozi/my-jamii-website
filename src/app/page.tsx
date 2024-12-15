@@ -13,7 +13,10 @@ import {
   FiHeart,
   FiInfo,
   FiLink,
+  FiShare,
   FiShield,
+  FiSmile,
+  FiVoicemail,
 } from 'react-icons/fi';
 import Navbar from './components/navbar';
 import ScreenshotTwo from './components/screenshot-two';
@@ -25,6 +28,10 @@ import PartnerTwo from './components/partnerTwo';
 import Switcher from './components/switcher';
 import ScrollToTop from './components/scroll-to-top';
 import Footer from './components/footer';
+import { BsFilePerson } from 'react-icons/bs';
+
+import { CgFileDocument } from 'react-icons/cg';
+import CookiePolicy from './components/cookie-policy';
 
 export default function Page() {
   let aboutData2 = [
@@ -64,6 +71,28 @@ export default function Page() {
       desc: 'There are many variations of passages of Lorem Ipsum available',
     },
   ];
+  let aboutData3 = [
+    {
+      icon: BsFilePerson,
+      title: 'Meet people',
+      desc: 'Our automated approach based on definition of your country of origing and where you live now makes it is for you to connect with people in your local community from your homecountry and other countries.',
+    },
+    {
+      icon: FiShare,
+      title: 'Share and ask',
+      desc: 'MyJamii allows to share and ask questions in your community and get responses from those living in the same communities. Who else is better placed to share with and answer about the community than the people living in it?',
+    },
+    {
+      icon: FiSmile,
+      title: 'Find events',
+      desc: 'Be it a diaspora gathering, hiking, picnic at the park, house party or your favourite musician from your home country coming to your town. MyJamii allows the community to create and share events to further community engagements',
+    },
+    {
+      icon: CgFileDocument,
+      title: 'Access services',
+      desc: 'Are you looking for relevant services where you live now? Are you looking for services back in your home country? Stop looking and let the service providers come to you. MyJamii simplifies how you may access services near you and back home.',
+    },
+  ];
 
   return (
     <>
@@ -73,6 +102,7 @@ export default function Page() {
         bgLight={false}
         navCenter={true}
       />
+      <CookiePolicy />
       {/* **************** HERO SECTION STARTS HERE ****************** */}
       <section
         className="relative pt-24 xl:pb-[420px] md:pb-80 pb-36 items-center overflow-hidden bg-myjamiiGreen/5"
@@ -362,11 +392,11 @@ export default function Page() {
       </section>
 
       {/* **************** SERVICES SECTION STARTS HERE ***************************** */}
-
-      <section className="relative md:pb-24 pb-16" id="customizable">
+      <div id="customizable"></div>
+      <section className="relative md:pb-24 pb-16">
         <div className="container relative md:mt-24 mt-16">
           <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-            <div className="lg:col-span-5 md:col-span-6">
+            {/* <div className="lg:col-span-5 md:col-span-6">
               <div className="pt-6 px-6 rounded-2xl bg-myjamiiGreen/5 dark:bg-myjamiiGreen/10 shadow shadow-myjamiiGreen/20">
                 <ReactWOW animation="zoomIn">
                   <Image
@@ -381,30 +411,31 @@ export default function Page() {
                   />
                 </ReactWOW>
               </div>
-            </div>
+            </div> */}
 
-            <div className="lg:col-span-7 md:col-span-6">
+            <div className="lg:col-span-12 md:col-span-6">
               <div className="lg:ms-10">
                 <ReactWOW animation="fadeInUp">
                   <div
                     className="wow animate__animated animate__fadeInUp"
                     data-wow-delay=".1s"
                   >
-                    <h6 className="text-myjamiiGreen uppercase text-sm font-bold tracking-wider mb-3">
-                      Customizable
+                    <h6 className="text-myjamiiGreen uppercase text-center text-sm font-bold tracking-wider mb-3">
+                      Services
                     </h6>
-                    <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">
-                      Work Faster With <br /> Powerful Tools
+                    <h4 className="mb-6 md:text-3xl text-2xl md:leading-normal text-center  leading-normal font-bold">
+                      Access services in your community and back home
                     </h4>
-                    <p className="text-slate-400 max-w-xl">
-                      Unleash the power of our platform with a multitude of
-                      powerful features, empowering you to achieve your goals.
+                    <p className="text-slate-400 max-w- xl text-center ">
+                      Meet People. Share. Thoughts. Ask Questions. Find Events.
+                      Access Services on Investment, Education, Food,
+                      Legal,ealth, and more.
                     </p>
                   </div>
                 </ReactWOW>
 
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-6">
-                  {aboutData.map((item: any, index: number) => {
+                  {aboutData3.map((item: any, index: number) => {
                     let Icon = item.icon;
                     return (
                       <ReactWOW animation="fadeInUp" key={index}>
@@ -432,7 +463,7 @@ export default function Page() {
                     );
                   })}
                 </div>
-                <ReactWOW animation="fadeInUp">
+                {/* <ReactWOW animation="fadeInUp">
                   <div
                     className="mt-6 wow animate__animated animate__fadeInUp"
                     data-wow-delay=".7s"
@@ -445,7 +476,7 @@ export default function Page() {
                       <i className="mdi mdi-arrow-right align-middle"></i>
                     </Link>
                   </div>
-                </ReactWOW>
+                </ReactWOW> */}
               </div>
             </div>
           </div>
@@ -484,13 +515,13 @@ export default function Page() {
         <FaqTwo />
       </section>
 
-      <section
+      {/* <section
         className="relative md:py-24 py-16 bg-slate-50/50 dark:bg-slate-800/20"
         id="download"
       >
         <DownloadTwo />
-      </section>
-
+      </section> */}
+      {/*
       <section className="relative md:py-24 py-16" id="reviews">
         <div className="container relative">
           <ReactWOW animation="fadeInUp">
@@ -514,7 +545,7 @@ export default function Page() {
 
           <ClientTwo />
         </div>
-      </section>
+      </section> */}
 
       <section
         className="relative md:py-24 py-16 bg-slate-50/50 dark:bg-slate-800/20"

@@ -1,5 +1,7 @@
 'use client';
+
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'; // Import usePathname
 import { Link as Link1 } from 'react-scroll';
 import { FiUser } from 'react-icons/fi';
 import Link from 'next/link';
@@ -16,8 +18,10 @@ export default function Navbar({
   bgLight: boolean;
   navCenter: boolean;
 }) {
-  let [menu, setMenu] = useState<Boolean>(false);
-  let [scroll, setScroll] = useState<Boolean>(false);
+  const [menu, setMenu] = useState<Boolean>(false);
+  const [scroll, setScroll] = useState<Boolean>(false);
+
+  const pathname = usePathname(); // Get the current pathname
 
   useEffect(() => {
     const handlerScroll = () => {
@@ -36,7 +40,7 @@ export default function Navbar({
 
   return (
     <nav
-      className={`navbar ${
+      className={`navbar md:pt-6 ${
         bgLight ? 'bg-white dark:bg-slate-900 shadow dark:shadow-gray-800' : ''
       } ${scroll ? 'is-sticky' : ''}`}
       id="navbar"
@@ -114,7 +118,7 @@ export default function Navbar({
                     src="/images/appstore.svg"
                     width={32}
                     height={32}
-                    alt=""
+                    alt="App Store"
                   />
                 </Link>
               </li>
@@ -128,7 +132,7 @@ export default function Navbar({
                     src="/images/google-play.svg"
                     width={32}
                     height={32}
-                    alt=""
+                    alt="Google Play"
                   />
                 </Link>
               </li>
@@ -145,66 +149,69 @@ export default function Navbar({
         </div>
 
         {/* Navigation Links */}
-        <div
-          className={`navigation lg_992:order-1 lg_992:flex ${
-            navCenter ? '' : 'ms-auto'
-          } ${menu ? '' : 'hidden'}`}
-          id="menu-collapse"
-        >
-          <ul
-            className={`navbar-nav ${navLight ? 'nav-light' : ''}`}
-            id="navbar-navlist"
+        {pathname === '/' && ( // Render navigation links only if the pathname is "/"
+          <div
+            className={`navigation lg_992:order-1 lg_992:flex ${
+              navCenter ? '' : 'ms-auto'
+            } ${menu ? '' : 'hidden'}`}
+            id="menu-collapse"
           >
-            <li className="nav-item ms-0">
-              <Link1
-                className="nav-link"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="home"
-              >
-                Home
-              </Link1>
-            </li>
-            <li className="nav-item ms-0">
-              <Link1
-                className="nav-link"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="features"
-              >
-                About
-              </Link1>
-            </li>
-            <li className="nav-item ms-0">
-              <Link1
-                className="nav-link"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="customizable"
-              >
-                Services
-              </Link1>
-            </li>
-            <li className="nav-item ms-0">
-              <Link1
-                className="nav-link"
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                duration={500}
-                to="faqs"
-              >
-                Community guidelines
-              </Link1>
-            </li>
-          </ul>
-        </div>
+            <ul
+              className={`navbar-nav ${navLight ? 'nav-light' : ''}`}
+              id="navbar-navlist"
+            >
+              <li className="nav-item ms-0">
+                <Link1
+                  href="/"
+                  className="nav-link"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  to="home"
+                >
+                  Home
+                </Link1>
+              </li>
+              <li className="nav-item ms-0">
+                <Link1
+                  className="nav-link"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  to="features"
+                >
+                  About
+                </Link1>
+              </li>
+              <li className="nav-item ms-0">
+                <Link1
+                  className="nav-link"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  to="customizable"
+                >
+                  Services
+                </Link1>
+              </li>
+              <li className="nav-item ms-0">
+                <Link1
+                  className="nav-link"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  to="faqs"
+                >
+                  Community guidelines
+                </Link1>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );

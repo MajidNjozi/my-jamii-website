@@ -83,22 +83,37 @@ export const screenshotImg = [
 export const faq = [
   {
     id: 1,
-    title: 'How does it work ?',
+    title: 'Information sharing',
     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
     id: 2,
-    title: 'Do I need a designer to use Appever ?',
+    title: 'Personal contacts',
     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
     id: 3,
-    title: 'What do I need to do to start selling ?',
+    title: 'Content posting',
     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
     id: 4,
-    title: 'What happens when I receive an order ?',
+    title: 'Content sharing',
+    desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+  },
+  {
+    id: 5,
+    title: 'Content sharing',
+    desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+  },
+  {
+    id: 6,
+    title: 'Online engagements',
+    desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
+  },
+  {
+    id: 7,
+    title: 'Guidelines on how to interact on comments',
     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
 ];

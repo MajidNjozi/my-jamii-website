@@ -22,14 +22,20 @@ export default function Footer() {
 
         {/* Navigation Links Section */}
         <div className="flex flex-col md:flex-row items-center justify-center md:space-x-6">
-          <Link href="/home" className="text-gray-400 hover:text-myjamiiGreen">
+          <Link
+            href="/cookie-policy"
+            className="text-gray-400 hover:text-myjamiiGreen"
+          >
             Cookie policy
           </Link>
-          <Link href="/about" className="text-gray-400 hover:text-myjamiiGreen">
+          <Link
+            href="/data-privacy"
+            className="text-gray-400 hover:text-myjamiiGreen"
+          >
             Data privacy
           </Link>
           <Link
-            href="/services"
+            href="/terms-and-conditions"
             className="text-gray-400 hover:text-myjamiiGreen"
           >
             Terms & conditions
