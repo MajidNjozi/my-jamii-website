@@ -15,13 +15,13 @@ export const metadata: Metadata = {
       'We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen.',
     images: [
       {
-        url: 'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+        url: 'https://drive.google.com/uc?id=1N5Kzd8zb7UoQcnTEG2cCiP8hxig-nyjJ',
         width: 1200,
         height: 630,
         alt: 'Rasello platform showcasing analytics, prediction, and communication tools',
       },
       {
-        url: 'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+        url: 'https://drive.google.com/uc?id=1N5Kzd8zb7UoQcnTEG2cCiP8hxig-nyjJ',
         width: 600,
         height: 315,
         alt: 'Rasello platform showcasing analytics, prediction, and communication tools',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     description:
       'We understand living abroad calls for establishing connections with the local and the community of your fellow countrymen.',
     images: [
-      'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
-      'https://utfs.io/f/NQ1UkAeyXUbIpHFXFIWGmPg8HRKNY2zILXnqEVOeQ4owJiBy',
+      'https://drive.google.com/uc?id=1N5Kzd8zb7UoQcnTEG2cCiP8hxig-nyjJ',
+      'https://drive.google.com/uc?id=1N5Kzd8zb7UoQcnTEG2cCiP8hxig-nyjJ',
     ],
   },
 };
