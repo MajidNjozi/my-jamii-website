@@ -21,8 +21,7 @@ import {
 import Navbar from './components/navbar';
 import ScreenshotTwo from './components/screenshot-two';
 import FaqTwo from './components/faq-two';
-import DownloadTwo from './components/download-two';
-import ClientTwo from './components/client-two';
+
 import ContactTwo from './components/contact-two';
 import PartnerTwo from './components/partnerTwo';
 import Switcher from './components/switcher';
@@ -449,10 +448,10 @@ export default function Page() {
                             <Icon className="size-8 mt-2" />
                           </span>
                           <div className="flex-1 ms-3">
-                            <h5 className="group-hover:text-white text-lg font-semibold duration-500">
+                            <h5 className="group-hover:text-myjamiiBlack text-lg font-semibold duration-500">
                               {item.title}
                             </h5>
-                            <p className="text-slate-400 group-hover:text-white/50 duration-500 mt-2">
+                            <p className="text-slate-400 group-hover:text-myjamiiBlack/50 duration-500 mt-2">
                               {item.desc}
                             </p>
                           </div>
